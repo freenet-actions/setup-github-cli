@@ -60,11 +60,13 @@ async function downloadGithubCli(version: string): Promise<string> {
 
     if (path.extname(downloadUrl) === '.zip') {
       extractedPath = await tc.extractZip(downloadPath)
+      return await tc.cacheDir(extractedPath, toolName, version)
     } else {
       extractedPath = await tc.extractTar(downloadPath)
+      const toolDirectoryName = `gh_${version}_${getPlattform()}_${getArch()}`
+      const toolRoot = path.join(extractedPath, toolDirectoryName)
+      return await tc.cacheDir(toolRoot, toolName, version)
     }
-
-    return await tc.cacheDir(extractedPath, toolName, version)
   } catch (err) {
     throw err
   }

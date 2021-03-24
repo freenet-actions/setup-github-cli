@@ -91,11 +91,14 @@ function downloadGithubCli(version) {
             let extractedPath;
             if (path.extname(downloadUrl) === '.zip') {
                 extractedPath = yield tc.extractZip(downloadPath);
+                return yield tc.cacheDir(extractedPath, toolName, version);
             }
             else {
                 extractedPath = yield tc.extractTar(downloadPath);
+                const toolDirectoryName = `gh_${version}_${getPlattform()}_${getArch()}`;
+                const toolRoot = path.join(extractedPath, toolDirectoryName);
+                return yield tc.cacheDir(toolRoot, toolName, version);
             }
-            return yield tc.cacheDir(extractedPath, toolName, version);
         }
         catch (err) {
             throw err;

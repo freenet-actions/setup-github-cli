@@ -33,7 +33,7 @@ jobs:
           name: action-package
       - uses: ./
       - run: |
-          sonar-scanner --version
+          gh --version
 
   release:
     if: github.event_name == 'workflow_dispatch'

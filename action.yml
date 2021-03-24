@@ -1,0 +1,11 @@
+name: 'setup-github-cli'
+description: 'setup Github CLI'
+author: 'DPVO'
+inputs:
+  version: 
+    required: true
+    description: 'Version of Github CLi'
+    default: '1.7.0'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

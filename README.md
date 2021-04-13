@@ -5,6 +5,13 @@ This action sets up github cli tool. It downloads github cli binaries from https
 
    
 # Usage
+## Set up default github cli version (1.7.0)
 ```yaml
 - uses: md-actions/setup-github-cli@v1.0.0
+```
+## Set up specific github cli version
+```yaml
+- uses: md-actions/setup-yq@v1.0.0
+  with:
+    version: 1.8.1
 ```

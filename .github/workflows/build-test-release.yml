@@ -55,5 +55,5 @@ jobs:
        git push origin v$PACKAGE_VERSION --force
     - name: Increment Version
       run: |
-       npm version patch
+       npm version patch --force
        git push --force

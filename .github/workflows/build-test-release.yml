@@ -46,7 +46,7 @@ jobs:
       run: |
        git config --local user.email "action@github.com"
        git config --local user.name "GitHub Action"                    
-       npm ci
+       npm install
        npm run build && npm run package
        git add dist
        git commit --allow-empty -m "new release"

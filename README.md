@@ -1,17 +1,17 @@
-# setup Github Cli
+# setup GitHub CLI
 [![LICENSE](https://img.shields.io/github/license/md-actions/setup-github-cli)](https://github.com/md-actions/setup-github-cli/blob/main/LICENSE)
 
-Github Cli is the command line tool of Github ([see the manual](https://cli.github.com/manual/)).
+GitHub CLI is the command line tool of GitHub ([see the manual](https://cli.github.com/manual/)).
 
-This action sets up github cli tool. It downloads github cli binaries from https://github.com/cli/cli/releases and adds path to PATH
+This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https://github.com/cli/cli/releases and adds path to PATH
 
    
 # Usage
-## Set up default github cli version (1.11.0)
+## Set up default GitHub CLI version (1.11.0)
 ```yaml
 - uses: md-actions/setup-github-cli@v1
 ```
-## Set up specific github cli version
+## Set up specific GitHub CLI version
 ```yaml
 - uses: md-actions/setup-github-cli@v1
   with:

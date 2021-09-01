@@ -7,7 +7,7 @@ This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https
 
    
 # Usage
-## Set up default GitHub CLI version (1.11.0)
+## Set up default GitHub CLI version (2.0.0)
 ```yaml
 - uses: md-actions/setup-github-cli@v1
 ```

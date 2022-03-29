@@ -1,5 +1,5 @@
 # setup GitHub CLI
-[![LICENSE](https://img.shields.io/github/license/md-actions/setup-github-cli)](https://github.com/md-actions/setup-github-cli/blob/main/LICENSE)
+[![LICENSE](https://img.shields.io/github/license/freenet-actions/setup-github-cli)](https://github.com/freenet-actions/setup-github-cli/blob/main/LICENSE)
 
 GitHub CLI is the command line tool of GitHub ([see the manual](https://cli.github.com/manual/)).
 

@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/md-actions/setup-github-cli.git"
+    "url": "git+https://github.com/freenet-actions/setup-github-cli.git"
   },
   "keywords": [
     "actions",

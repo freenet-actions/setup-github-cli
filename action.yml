@@ -5,7 +5,7 @@ inputs:
   version: 
     required: true
     description: 'Version of GitHub CLI'
-    default: '2.41.0'
+    default: '2.42.1'
 runs:
   using: 'node20'
   main: 'dist/index.js'

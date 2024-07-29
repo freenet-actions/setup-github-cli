@@ -1,4 +1,4 @@
-# setup GitHub CLI
+# Setup GitHub CLI
 [![LICENSE](https://img.shields.io/github/license/freenet-actions/setup-github-cli)](https://github.com/freenet-actions/setup-github-cli/blob/main/LICENSE)
 
 GitHub CLI is the command line tool of GitHub ([see the manual](https://cli.github.com/manual/)).
@@ -7,7 +7,7 @@ This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https
 
    
 # Usage
-## Set up default GitHub CLI version (2.49.2)
+## Set up default GitHub CLI version (2.53.0)
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
 ```
@@ -15,5 +15,5 @@ This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
   with:
-    version: 2.49.2
+    version: 2.53.0
 ```

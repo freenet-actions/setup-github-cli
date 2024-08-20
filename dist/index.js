@@ -39,7 +39,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.install = void 0;
+exports.install = install;
 const core = __importStar(__nccwpck_require__(2186));
 const tc = __importStar(__nccwpck_require__(7784));
 const os = __importStar(__nccwpck_require__(2037));
@@ -56,7 +56,6 @@ function install(version) {
         core.addPath(toolPath);
     });
 }
-exports.install = install;
 function getPlattform() {
     const platformMap = {
         linux: 'linux',

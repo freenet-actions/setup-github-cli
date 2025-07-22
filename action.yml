@@ -2,10 +2,10 @@ name: 'setup-github-cli'
 description: 'Setup GitHub CLI'
 author: 'freenet'
 inputs:
-  version: 
+  version:
     required: true
     description: 'Version of GitHub CLI'
-    default: '2.63.2'
+    default: '2.76.0'
 runs:
   using: 'node20'
   main: 'dist/index.js'

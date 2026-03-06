@@ -6,7 +6,7 @@ GitHub CLI is the command line tool of GitHub ([see the manual](https://cli.gith
 
 This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https://github.com/cli/cli/releases and adds path to PATH.
 
-If you're using GitHub-hosted runners in your workflow, you probably don't need this (see "Included Software" on https://github.com/actions/runner-images).
+If you're using GitHub-hosted runners in your workflow, you probably don't need this (see "Included Software" on https://github.com/actions/runner-images), unless you want to downgrade/pin the version.
 
 # Usage
 

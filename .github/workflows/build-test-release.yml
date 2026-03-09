@@ -1,6 +1,6 @@
 name: 'build-test-release'
 
-on: 
+on:
   workflow_dispatch:
   pull_request:
   push:
@@ -58,19 +58,19 @@ jobs:
         node-version-file: .nvmrc
     - name: 🚧 Build Release
       run: |
-       git config --local user.email "action@github.com"
-       git config --local user.name "GitHub Action"                    
-       npm ci --ignore-scripts
-       npm run build && npm run package
-       git add dist
-       git commit --allow-empty -m "new release"
-       PACKAGE_VERSION=$(node -p "require('./package.json').version")
-       MAIN_PACKAGE_VERSION=$(node -p "require('./package.json').version[0]")
-       git tag -fa v$PACKAGE_VERSION -m "Update tag"
-       git push origin v$PACKAGE_VERSION --force
-       git tag -fa v$MAIN_PACKAGE_VERSION -m "Update tag"
-       git push origin v$MAIN_PACKAGE_VERSION --force
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"                    
+        npm ci --ignore-scripts
+        npm run build && npm run package
+        git add dist
+        git commit --allow-empty -m "new release"
+        PACKAGE_VERSION=$(node -p "require('./package.json').version")
+        MAIN_PACKAGE_VERSION=$(node -p "require('./package.json').version[0]")
+        git tag -fa v$PACKAGE_VERSION -m "Update tag"
+        git push origin v$PACKAGE_VERSION --force
+        git tag -fa v$MAIN_PACKAGE_VERSION -m "Update tag"
+        git push origin v$MAIN_PACKAGE_VERSION --force
     - name: ⚙️ Increment Version
       run: |
-       npm version patch --force
-       git push --force
+        npm version patch --force
+        git push --force

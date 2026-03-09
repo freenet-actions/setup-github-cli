@@ -8,7 +8,7 @@ This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https
 
 # Usage
 
-## Set up GitHub CLI with default version (2.76.0)
+## Set up GitHub CLI with default version (2.87.3)
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
 ```
@@ -16,5 +16,5 @@ This action sets up GitHub CLI tool. It downloads GitHub CLI binaries from https
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
   with:
-    version: 2.76.0
+    version: 2.87.3
 ```

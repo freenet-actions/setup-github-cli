@@ -10,7 +10,7 @@ If you're using GitHub-hosted runners in your workflow, you probably don't need 
 
 # Usage
 
-## Set up GitHub CLI with default version (2.76.0)
+## Set up GitHub CLI with default version (2.87.3)
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
 ```
@@ -18,5 +18,5 @@ If you're using GitHub-hosted runners in your workflow, you probably don't need 
 ```yaml
 - uses: freenet-actions/setup-github-cli@v3
   with:
-    version: 2.76.0
+    version: 2.87.3
 ```

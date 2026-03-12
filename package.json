@@ -1,6 +1,6 @@
 {
   "name": "setup-github-cli",
-  "version": "3.4.1",
+  "version": "3.5.0",
   "private": true,
   "description": "Setup the github cli tools",
   "main": "lib/main.js",
@@ -29,9 +29,11 @@
     "@actions/tool-cache": "2.0.2"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "5.10.0",
     "@types/jest": "30.0.0",
     "@types/node": "20.19.35",
-    "@typescript-eslint/parser": "8.56.1",
+    "@typescript-eslint/eslint-plugin": "8.57.0",
+    "@typescript-eslint/parser": "8.57.0",
     "@vercel/ncc": "0.38.4",
     "eslint": "9.39.3",
     "eslint-plugin-github": "6.0.0",

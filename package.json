@@ -28,10 +28,13 @@
     "@actions/core": "1.11.1",
     "@actions/tool-cache": "2.0.2"
   },
+  "overrides": {
+    "undici": "6.24.0"
+  },
   "devDependencies": {
     "@stylistic/eslint-plugin": "5.10.0",
     "@types/jest": "30.0.0",
-    "@types/node": "20.19.35",
+    "@types/node": "^24.12.2",
     "@typescript-eslint/parser": "8.57.2",
     "@vercel/ncc": "0.38.4",
     "eslint": "9.39.3",

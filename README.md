@@ -10,13 +10,13 @@ If you're using GitHub-hosted runners in your workflow, you probably don't need 
 
 # Usage
 
-## Set up GitHub CLI with default version (2.76.0)
+## Set up GitHub CLI with default version (2.89.0)
 ```yaml
-- uses: freenet-actions/setup-github-cli@v3
+- uses: freenet-actions/setup-github-cli@v4.0.0
 ```
 ## Set up GitHub CLI with specific version
 ```yaml
-- uses: freenet-actions/setup-github-cli@v3
+- uses: freenet-actions/setup-github-cli@v4.0.0
   with:
-    version: 2.76.0
+    version: 2.89.0
 ```
